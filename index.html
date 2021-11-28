@@ -147,13 +147,23 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
 <li>$:/config/RelinkOnRename</li>
 
+<li>$:/ControlPanel</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
+
+<li>$:/GitHub/Filename</li>
+
+<li>$:/GitHub/Repo</li>
+
+<li>$:/GitHub/Username</li>
 
 <li>$:/Import</li>
 
@@ -184,6 +194,8 @@ Error message and password prompt
 <li>$:/state/tab--2112689675</li>
 
 <li>$:/state/tab-1749438307</li>
+
+<li>$:/state/tab-2065006209</li>
 
 <li>$:/state/tab/moresidebar-1850697562</li>
 
@@ -266,11 +278,20 @@ Error message and password prompt
 <div created="20211127211051570" modified="20211127211051570" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
 </div>
+<div created="20211128130443546" modified="20211128130443546" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import">
+<pre>show</pre>
+</div>
 <div created="20211127134754588" modified="20211127134754588" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
 <pre>show</pre>
 </div>
 <div created="20211127215939568" modified="20211127215939568" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
+</div>
+<div color="#bbb" created="20211128143222130" icon="$:/core/images/options-button" modified="20211128143222130" title="$:/ControlPanel">
+<pre>&lt;div class=&quot;tc-control-panel&quot;&gt;
+&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[shadows+tiddlers]tag[$:/tags/ControlPanel]!has[draft.of]]&quot; default=&quot;$:/core/ui/ControlPanel/Info&quot; explicitState=&quot;$:/state/tab-1749438307&quot;/&gt;
+&lt;/div&gt;
+</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.23">
 <pre>{
@@ -10139,10 +10160,19 @@ Error message and password prompt
 <div created="20211127134321190" modified="20211127134321190" title="$:/DefaultTiddlers">
 <pre></pre>
 </div>
+<div created="20211128142816152" modified="20211128142830515" title="$:/GitHub/Filename">
+<pre>index.html</pre>
+</div>
+<div created="20211128142746473" modified="20211128142758803" title="$:/GitHub/Repo">
+<pre>chaimburstein/wiki</pre>
+</div>
+<div created="20211128142728879" modified="20211128142733844" title="$:/GitHub/Username">
+<pre>chaimburstein</pre>
+</div>
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/danielo515/encryptTiddler]]</pre>
+# [[Coming Home_Leon Bridges.pdf]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -10288,14 +10318,17 @@ Error message and password prompt
 <div created="20211127220408256" modified="20211127220408256" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
-<div created="20211127203900065" modified="20211128141230613" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20211127203900065" modified="20211128142611451" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
+</div>
+<div created="20211128142620047" modified="20211128142620047" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20211128110559908" modified="20211128110559908" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20211127134750493" modified="20211128141232142" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20211127134750493" modified="20211128130541787" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20211128002115247" modified="20211128113820592" title="$:/state/toc/TableOfContents-Fast Cars--177791205">
 <pre>open</pre>
@@ -10313,9 +10346,9 @@ Error message and password prompt
 <pre>open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
-<div created="20211128141219920" list="$:/core $:/ControlPanel" modified="20211128141314281" title="$:/StoryList">
+<div created="20211128142606697" list="$:/ControlPanel" modified="20211128142606697" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -10505,8 +10538,9 @@ Error message and password prompt
 <div content-index="40" created="20211127203348166" encrypted="{&quot;iv&quot;:&quot;o/E3my+iFGpEckyG5uN5Cw==&quot;,&quot;v&quot;:1,&quot;iter&quot;:10000,&quot;ks&quot;:128,&quot;ts&quot;:64,&quot;mode&quot;:&quot;ccm&quot;,&quot;adata&quot;:&quot;&quot;,&quot;cipher&quot;:&quot;aes&quot;,&quot;salt&quot;:&quot;k5J3Yw1zYgQ=&quot;,&quot;ct&quot;:&quot;e6z2RUt3B6h5BwnjIhLQybUbTmn5CLjrHiCthqflrmywneM2wIUP9v1JYwoUAOOqcrV6X7ATKtLz5w/FHRNU8K/CvcHbT3WOD9mHZva443GB00UCnfXDWlEydhIal2SlR9Fn6XupBZrpzBEoFMSdJ33rbt4B//QH/sViumO/CXRMRBObswVVztAXxUEvt8Mw&quot;}" modified="20211128114436568" tags="TableOfContents" title="Fun">
 <pre>!!This is an encrypted Tiddler</pre>
 </div>
-<div content-index="0" created="20211127203331938" modified="20211128134236776" tags="TableOfContents" title="Funky Guitars">
-<pre>[ext[title| /wiki/pdf/Don't%20Stop%20Til%20You%20Get%20Enough.pdf]]</pre>
+<div content-index="0" created="20211127203331938" modified="20211128135846313" tags="TableOfContents" title="Funky Guitars">
+<pre>[ext[title| /wiki/pdf/Coming Home_Leon Bridges.pdf]] 
+</pre>
 </div>
 <div created="20211127220557052" modified="20211128003203307" tags="[[The Music Lesson]]" title="Guitar Lessons">
 <pre></pre>
