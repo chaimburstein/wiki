@@ -52,7 +52,22 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 
 <!--~~ Raw markup ~~-->
 
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 
 </head>
 <body class="tc-body">
@@ -149,6 +164,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
+<li>$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/twitter</li>
+
 <li>$:/config/RelinkOnRename</li>
 
 <li>$:/core</li>
@@ -172,6 +189,8 @@ Error message and password prompt
 <li>$:/state/encryptTiddler/control-panel/tabs-1723749573</li>
 
 <li>$:/state/image-picker/system-1207210149</li>
+
+<li>$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/twitter</li>
 
 <li>$:/state/showeditpreview</li>
 
@@ -270,6 +289,9 @@ Error message and password prompt
 </div>
 <div created="20211127134754588" modified="20211127134754588" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
 <pre>show</pre>
+</div>
+<div created="20211128141041168" modified="20211128141041168" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/twitter">
+<pre>yes</pre>
 </div>
 <div created="20211127215939568" modified="20211127215939568" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
@@ -10374,6 +10396,9 @@ Error message and password prompt
 <div created="20211127225320876" modified="20211127225322597" title="$:/state/image-picker/system-1207210149">
 <pre>hide</pre>
 </div>
+<div created="20211128141038109" modified="20211128141038109" title="$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/twitter">
+<pre>yes</pre>
+</div>
 <div created="20211127225404238" modified="20211127225407034" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
@@ -10417,9 +10442,9 @@ Error message and password prompt
 <pre>open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
-<div created="20211128140543203" list="$:/ControlPanel" modified="20211128140543203" title="$:/StoryList">
+<div created="20211128141034431" list="$:/ControlPanel" modified="20211128141034431" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
