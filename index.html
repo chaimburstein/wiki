@@ -171,6 +171,8 @@ Error message and password prompt
 
 <li>$:/layout</li>
 
+<li>$:/macros/danielo/footNote</li>
+
 <li>$:/plugins/danielo515/encryptTiddler</li>
 
 <li>$:/SiteSubtitle</li>
@@ -269,11 +271,15 @@ Error message and password prompt
 
 <li>Horns!</li>
 
+<li>My Favorite Things</li>
+
 <li>Picking</li>
 
 <li>Smart Fingers</li>
 
 <li>The Music Lesson</li>
+
+<li>Theory &amp; Ear Training</li>
 
 </ul>
 </p>
@@ -10177,8 +10183,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20211127134321190" modified="20211201010100882" title="$:/DefaultTiddlers">
-<pre></pre>
+<div created="20211127134321190" modified="20211202142428637" title="$:/DefaultTiddlers">
+<pre>Guitar Lessons</pre>
 </div>
 <div created="20211128142816152" modified="20211128142830515" title="$:/GitHub/Filename">
 <pre>index.html</pre>
@@ -10199,6 +10205,33 @@ Error message and password prompt
 </div>
 <div created="20211201005919671" modified="20211201005919671" title="$:/layout">
 <pre>$:/core/ui/PageTemplate</pre>
+</div>
+<div created="20211202170956033" modified="20211202171040391" tags="$:/tags/Macros" title="$:/macros/danielo/footNote">
+<pre>\define ref(label)
+&lt;$button popup=&quot;$:/state/$label$&quot; class=&quot;tc-btn-invisible tc-slider&quot;&gt;&lt;sup style=&quot;color:green&quot;&gt;$label$&lt;/sup&gt;&lt;/$button&gt;
+\end
+
+\define definition(label,text)
+&lt;$reveal type=&quot;popup&quot; state=&quot;$:/state/$label$&quot; animate=&quot;yes&quot;&gt;
+&lt;div class=&quot;tc-drop-down&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;$label$&lt;/dt&gt;
+&lt;dd&gt;$text$&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/$reveal&gt;
+\end
+
+\define footnote(label,text)
+&lt;&lt;ref &quot;$label$&quot;&gt;&gt;
+&lt;&lt;definition &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
+\end
+
+\define footnotes(label,text)
+&lt;&lt;definition &quot;$label$&quot; &quot;$text$&quot;&gt;&gt;
+&lt;sub&gt;&lt;span style=&quot;color:green&quot;&gt;$label$ : &lt;/span&gt; $text$&lt;/sub&gt;
+\end
+</pre>
 </div>
 <div author="DanieloRodrigez" bag="default" core-version="&gt;=5.1.1" dependents="" description="adds the ability to encrypt single tiddlers" list="Encrypt-Tiddler Changelog" plugin-type="plugin" released="2021-05-22T14:22:34.709Z" revision="0" source="https://github.com/danielo515/TIddlywiki5-EncryptTiddlerPlugin" title="$:/plugins/danielo515/encryptTiddler" type="application/json" version="2.5">
 <pre>{
@@ -10341,8 +10374,8 @@ Error message and password prompt
 <div created="20211127203926477" modified="20211201005920774" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
-<div created="20211127220408256" modified="20211127220408256" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Advanced</pre>
+<div created="20211127220408256" modified="20211202142419148" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
 <div created="20211128144514202" modified="20211128144529139" title="$:/state/tab--65940633">
 <pre>$:/core/ui/TiddlerInfo/Advanced</pre>
@@ -10359,8 +10392,8 @@ Error message and password prompt
 <div created="20211128110559908" modified="20211201005602741" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Orphans</pre>
 </div>
-<div created="20211127134750493" modified="20211201010122837" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20211127134750493" modified="20211202142332131" title="$:/state/tab/sidebar--595412856">
+<pre>Contents</pre>
 </div>
 <div created="20211128144120571" modified="20211128144120571" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
@@ -10380,19 +10413,19 @@ Error message and password prompt
 <div created="20211128003208007" modified="20211128113938883" title="$:/state/toc/TableOfContents/Funky Guitars-The Music Lesson--177791205">
 <pre>open</pre>
 </div>
-<div created="20211128143414773" modified="20211128143414773" title="$:/state/toc/TableOfContents/Funky Guitars-The Music Lesson-1843068618">
+<div created="20211128143414773" modified="20211202143734807" title="$:/state/toc/TableOfContents/Funky Guitars-The Music Lesson-1843068618">
 <pre>open</pre>
 </div>
 <div created="20211128003832501" modified="20211128023211893" title="$:/state/toc/TableOfContents/Funky Guitars/The Music Lesson-Guitar Lessons--177791205">
 <pre>open</pre>
 </div>
-<div created="20211128143416617" modified="20211128143416617" title="$:/state/toc/TableOfContents/Funky Guitars/The Music Lesson-Guitar Lessons-1843068618">
+<div created="20211128143416617" modified="20211202172320468" title="$:/state/toc/TableOfContents/Funky Guitars/The Music Lesson-Guitar Lessons-1843068618">
 <pre>open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20211201183859744" list="[[1. Warm-ups &amp; Finger Exercises]]" modified="20211201183859744" title="$:/StoryList">
+<div created="20211202142723077" list="[[4. Transcription &amp; Analysis]] [[3. Chords]] [[2. Scales]] [[1. Warm-ups &amp; Finger Exercises]] $:/macros/danielo/footNote [[The Music Lesson]] Horns! [[My Favorite Things]] [[Theory &amp; Ear Training]] [[Guitar Lessons]]" modified="20211202172337293" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -10513,7 +10546,7 @@ Error message and password prompt
 <div created="20211128144327623" modified="20211128144331029" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20211127220637416" guitar-index="0" modified="20211201184011677" tags="[[Guitar Lessons]]" title="1. Warm-ups &amp; Finger Exercises">
+<div created="20211127220637416" guitar-index="0" modified="20211201183124066" tags="[[Guitar Lessons]]" title="1. Warm-ups &amp; Finger Exercises">
 <pre>Here are some links to basic exercises I like my students to learn.
 
 !  1. Smart Fingers! - Spider Fingers &amp; Chord Relays
@@ -10556,7 +10589,7 @@ Error message and password prompt
 ! 3. Articulations - Everything Else!
 # Muting - How Not to play stuff!
 #* [ext[Muting Sheet 1|/wiki/pdf/Muting.pdf]]  - Intro to Muting &amp; Basic Muting Exercises
-#* [ext[Muting Sheet 2|/wiki/pdf/Muting &amp; Damping.pdf]] - More in Depth Muting &amp; Damping Concepts
+#* [ext[Muting Sheet 2|/wiki/pdf/Muting &amp; Dampening.pdf]] - More in Depth Muting &amp; Dampening Concepts
 
 !!Staccato &amp; Legato, 
 !!Hammer On’s &amp; Pull-offs 
@@ -10668,10 +10701,23 @@ Error message and password prompt
 <pre>[ext[title| /wiki/pdf/Coming Home_Leon Bridges.pdf]] 
 </pre>
 </div>
-<div created="20211127220557052" modified="20211128003203307" tags="[[The Music Lesson]]" title="Guitar Lessons">
-<pre></pre>
+<div created="20211127220557052" modified="20211202171351494" tags="[[The Music Lesson]]" title="Guitar Lessons">
+<pre>!!About 
+I offer private guitar lessons at [ext[Indie Music| http://www.indiemusicstore.biz/ ]] in Amherst NH. This is a spot for guitar specific information that I think will be useful for my private guitar students. The guitar was my first instrument. I started taking lessons from my father at age six and haven’t stopped playing since. As a result, I’ve developed a huge library of guitar specific information. I’ve done my best to break it down into some basic sections for you to work through.
+
+!!! [[1. Warm-ups &amp; Finger Exercises]]
+One of the hardest parts of playing guitar is getting our fingers to do what we tell them to. The exercises here are designed to help us work on basic technique, finger dexterity, independence and coordination. 
+
+!!! [[2. Scales]]
+Scales are the building blocks of music. This section is a reference for all of the scales &amp; fingerings we’ll be using in our lessons.
+
+!!! [[3. Chords]]
+The guitar is a harmonic instrument. That means we’ll be learning all about chords. A chord happens anytime we play 3 or more notes at the same time. Some are very pretty and some are not so pretty and it’s our job to figure out when to use each chord to get the sounds we’re trying to communicate with our music.
+
+!!! [[4. Transcription &amp; Analysis]]
+This is the lick library! Here’s where I’ll post tunes and analysis that are relevant to our lessons. </pre>
 </div>
-<div created="20211128003228603" modified="20211128023143026" tags="[[The Music Lesson]]" title="Horns!">
+<div created="20211128003228603" modified="20211202171351494" tags="[[The Music Lesson]]" title="Horns!">
 <pre>I teach Wind &amp; Brass Students at Indie Music. We learn the basics and by the time we’re done, you should probably look for a new teacher. Here’s what we work on each week. 
 
 # Long Tones - Play a note as long as you can! This is pretty self explanatory - play notes as LOOOOOOOOOOONNNGGG as you possibly can. It will help you with with breath control, embouchure strength &amp; endurance and overall tone production. Start with just getting a clean long sound out of your horn and we’ll dig into more specific notes, scales &amp; patterns as we go through the various Aural Skills &amp; Tunes we’ll learn. 
@@ -10679,6 +10725,28 @@ Error message and password prompt
 # Aural Skills - Reading, Writing &amp; Improvisation
 
 # Tunes - Jazz Standards &amp; simple parts to songs that you bring in!</pre>
+</div>
+<div created="20211202143804730" modified="20211202172307846" tags="[[The Music Lesson]]" title="My Favorite Things">
+<pre>Here’s a bunch of stuff I really dig. I’m not affiliated with most of these companies but I often have students ask about my favorite music, gear, or instructional material so I figured I’d start a little section on those as well. 
+
+!! Books
+# General Music Books
+#* The Music Lesson by Victor Wooten
+#* Effortless Mastery by Kenny Werner
+#Guitar Specific Music Books
+#*The 50 Greatest Guitar Books - Shawn Persinger
+
+
+!! Gear
+* Fender Amps
+* Squier Guitars 
+* BOSS Pedals
+* IK Multimedia Interfaces 
+* Ernie Ball Strings
+* ~ForScore - iOS music reader app
+
+&lt;hr&gt;
+My Favorite Things was originally written by Rodgers and Hammerstein for the musical “The Sound of Music”, it was most famously sung by Julie Andrews in the 1965 film version of the musical. My favorite version was performed by John Coltrane in 1960 as the title track of his seventh studio album.</pre>
 </div>
 <div created="20211128102856528" modified="20211129172948452" title="Picking">
 <pre>!!Plectrum - The Pick 
@@ -10714,8 +10782,22 @@ Error message and password prompt
 # Permutations - Play Everything, Every Way, Everyday - Same thing only totally different.
 </pre>
 </div>
-<div created="20211128003105802" modified="20211128023027946" tags="[[Funky Guitars]]" title="The Music Lesson">
-<pre>I teach music lessons at Indie Music in Amherst NH. It’s the best independent music store in all of southern NH and you should definitely stop in to check out all the cool gear they have. </pre>
+<div created="20211128003105802" modified="20211202171849510" tags="[[Funky Guitars]]" title="The Music Lesson">
+<pre>I teach music lessons at [ext[Indie Music| http://www.indiemusicstore.biz/ ]] in Amherst NH. It’s the best independent music store in all of southern NH and you should definitely stop in to check out all the cool gear they have. This part of my wiki serves as a reference for my private students to use. Hopefully it’s helpful and mildly entertaining. To start, I’ve provided a brief outline of what’s offered here. Feel free to poke around and remember that although these resources are helpful, the best thing you can do to improve your playing is to pick up your instrument and play!
+
+!![[Theory &amp; Ear Training]]
+
+!![[Guitar Lessons]]
+
+!![[Horns!]]
+
+!![[My Favorite Things]]
+
+&lt;hr&gt;
+“The Music Lesson” by Victor Wooten is a great read.</pre>
+</div>
+<div created="20211202143652127" modified="20211202171351494" tags="[[The Music Lesson]]" title="Theory &amp; Ear Training">
+<pre>Theory &amp; Ear Training are the nuts &amp; bolts of music. </pre>
 </div>
 
 
